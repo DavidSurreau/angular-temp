@@ -15,9 +15,6 @@ export class RentalDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute,
     private rentalService: RentalService
     ) {
-    // this.route.params.subscribe( params => {this.print = params.rentalId}, 
-    // );
-    // console.log(this.print)
    }
 
   ngOnInit() {

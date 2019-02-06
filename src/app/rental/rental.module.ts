@@ -13,6 +13,7 @@ import { RentalComponent } from './rental.component';
 import { RentalService } from './shared/rental.service';
 import { RentalDetailComponent } from './rental-detail/rental-detail.component';
 import { UppercasePipe } from '../common/pipes/uppercase.pipe';
+import { MapModule } from '../common/map/map.module';
 
 const routes: Routes = [
     {path: 'rentals', component: RentalComponent,
@@ -36,11 +37,11 @@ const routes: Routes = [
             CommonModule,
             HttpClientModule,
             RouterModule.forChild(routes),
-            NgPipesModule
+            NgPipesModule,
+            MapModule
         ],
         providers: [RentalService]
     }
 )
 export class RentalModule {
-    // items = ['First', 'Second', 'Third'];
 }
